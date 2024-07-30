@@ -2,19 +2,20 @@ async function getData(url) {
   try {
     const response = await fetch(url);
     data = await response.json();
-    
     document.getElementById("Bairro-input").value = data.bairro;
-    document.getElementById("Cidade-input").value = data.cidade;
+    document.getElementById("Cidade-input").value = data.localidade;
     document.getElementById("Estado-input").value = data.uf;
-    document.getElementById("Bairro-input").value = data.bairro;
-    document.getElementById("Bairro-input").value = data.bairro;
-
-} catch (error) {}
+    document.getElementById("Rua-input").value = data.logradouro;
+    document.getElementById("Complemento-input").value = data.complemento;
+} catch (error) {
+}
 }
 function events(cep) {
-console.log(cep)
+
   if (cep.length === 8) {
     getData(`https://viacep.com.br/ws/${cep}/json/`);
+  }else{
+    alert("CEP inválido. Tente novamente")
   }
 }
 
