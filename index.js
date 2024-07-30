@@ -22,7 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttom = document
     .getElementById("btn-CEP")
     .addEventListener("click", () => {
+
       const cep = document.getElementById("CEP-input").value;
-      events(cep);
+      if (cep.length === 8){
+         events(cep);
+
+      } else { 
+        alert("CEP inválido")
+      }
     });
 });

@@ -1,5 +1,8 @@
-.teste { 
-    background-color: blueviolet;
-    color: aliceblue;
-    font-size: 244px;
+.info { 
+    margin-top: 15px;
+
+}
+.info-container{ 
+    flex-wrap: wrap;
+    border: 1px solid green;
 }
