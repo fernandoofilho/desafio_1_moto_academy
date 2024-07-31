@@ -26,13 +26,13 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
 
   <header>
     <script src="index.js"></script>
-    <nav class="navbar" style="background-color: #001428">
+    <nav class="navbar styled-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" style="font-weight: 600; color: white">
           <img
@@ -55,19 +55,27 @@
       <div class="row text-center" style="margin-top: 50pt">
         <div
           class="col"
-          style="
+          style ="
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20pt;
             font-weight: bold;
+            justify-content: left;
           "
         >
-          Encontre Seu Endereço
+          "Encontre <br />
+          Qualquer lugar <br />
+          a qualquer hora"
         </div>
+        <img
+          src="data:image/png;base64,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"
+          alt="search"
+          class="img-icon"
+        />
       </div>
 
       <div class="row" style="margin-top: 50pt">
-        <div class="col-12">
-          <div class="form-floating">
+        <div class="grid input-container">
+          <div class="form-floating mb-6 col-7 cep-input">
             <input
               id="CEP-input"
               type="text"
@@ -76,23 +84,16 @@
               aria-label="Insira seu CEP"
               aria-describedby="button-addon2"
               maxlength="8"
-              style="height: 35pt"
             />
             <label for="CEP-input">Insira seu CEP</label>
-            <button
-              id="btn-CEP"
-              class="btn"
-              style="
-                background-color: #001428;
-                color: white;
-                font-weight: bold;
-                height: 35pt;
-              "
-              type="submit"
-            >
-              Pesquisar
-            </button>
           </div>
+          <button
+            id="btn-CEP"
+            class="btn btn-primary mb-3 col-3 styled-button col-4"
+            type="submit"
+          >
+            Pesquisar
+          </button>
         </div>
       </div>
 
@@ -104,7 +105,6 @@
             class="form-control info"
             placeholder="Estado"
             aria-label="Estado"
-            style="height: 35pt"
             disabled
           />
         </div>
@@ -115,7 +115,6 @@
             class="form-control info"
             placeholder="Cidade"
             aria-label="Estado"
-            style="height: 35pt"
             disabled
           />
         </div>
@@ -126,21 +125,10 @@
             class="form-control info"
             placeholder="Bairro"
             aria-label="Estado"
-            style="height: 35pt"
             disabled
           />
         </div>
-        <div class="col-6">
-          <input
-            id="UF-input"
-            type="text"
-            class="form-control info"
-            placeholder="UF"
-            aria-label="Estado"
-            style="height: 35pt"
-            disabled
-          />
-        </div>
+
         <div class="col-6">
           <input
             id="Rua-input"
@@ -148,18 +136,6 @@
             class="form-control info"
             placeholder="Rua"
             aria-label="Estado"
-            style="height: 35pt"
-            disabled
-          />
-        </div>
-        <div class="col-6">
-          <input
-            id="Complemento-input"
-            type="text"
-            class="form-control info"
-            placeholder="Complemento"
-            aria-label="Estado"
-            style="height: 35pt"
             disabled
           />
         </div>

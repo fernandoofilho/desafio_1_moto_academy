@@ -1,8 +1,46 @@
-.info { 
-    margin-top: 15px;
 
-}
 .info-container{ 
     flex-wrap: wrap;
     border: 1px solid green;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cep-input {
+  position: relative;
+  font-weight: 400;
+}
+.styled-button {
+  margin-top: 10px;
+  background: #717f7f;
+  border:1px solid #5cc6ba;
+;
+
+}
+.styled-button:hover {
+  background: #5cc6ba;
+  border:1px solid #717f7f;
+  
+
+}
+
+.styled-nav { 
+    background: #717f7f;
+}
+.info {
+    margin-top: 15px; 
+    background:  #5cc6ba;
+    color: #3d3d3d;
+    height: 35pt;
+    font-weight: 600;
+}
+.img-icon{ 
+    width: 200px;
+}
+title { 
+    display: flex;
+    flex-direction: column;
 }
